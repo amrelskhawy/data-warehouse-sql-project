@@ -3,8 +3,17 @@
 LOAD Script for Bonze Schema
 ==================================================
 Script Purpose:
-    This Script Loads Data from source to our Database
-    It Truncate the Table before insert in it 
+    This Script Loads Data from external CSV files to our Database.
+    It preforms the following actions:-
+        - It Truncate the Table before insert in it.
+        - uses the `BULK INSERT` command to load data from CSV files to bronze tables.
+    
+Paramters:
+    None
+    This Stored Procedure does not accept any paramaters or return any values.
+
+Usage Example:
+    EXEC bronze.load_bonze;
 ==================================================
 */
 
